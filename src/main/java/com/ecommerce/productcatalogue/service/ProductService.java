@@ -7,8 +7,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class ProductService {
     private WebClient webClient;
 
-    public ProductService(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("https://fakestoreapi.com").build();
+    public ProductService(WebClient webClient) {
+        this.webClient = webClient;
     }
 
     public String getProducts() {
