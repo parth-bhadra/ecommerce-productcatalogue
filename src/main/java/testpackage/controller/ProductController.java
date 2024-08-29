@@ -1,4 +1,4 @@
-package com.ecommerce.productcatalogue.controller;
+package testpackage.controller;
 
 import com.ecommerce.productcatalogue.service.ProductService;
 import org.springframework.web.bind.annotation.GetMapping;
