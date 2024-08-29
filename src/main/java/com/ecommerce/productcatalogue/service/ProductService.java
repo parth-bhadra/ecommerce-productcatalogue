@@ -1,15 +1,13 @@
 package com.ecommerce.productcatalogue.service;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
+@RequiredArgsConstructor
 public class ProductService {
-    private WebClient webClient;
-
-    public ProductService(WebClient webClient) {
-        this.webClient = webClient;
-    }
+    private final WebClient webClient;
 
     public String getProducts() {
         return this.webClient
